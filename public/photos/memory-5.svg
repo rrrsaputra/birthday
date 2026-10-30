@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e2d8fc"/>
+      <stop offset="0.55" stop-color="#fdd0dc"/>
+      <stop offset="1" stop-color="#ffd9c4"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="0.35" cy="0.3" r="0.6">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="30"/></filter>
+  </defs>
+  <rect width="800" height="800" fill="url(#sky)"/>
+  <circle cx="620" cy="160" r="140" fill="#fff8dc" opacity="0.7" filter="url(#soft)"/>
+  <ellipse cx="160" cy="700" rx="260" ry="80" fill="#fff" opacity="0.55" filter="url(#soft)"/>
+  <ellipse cx="640" cy="720" rx="260" ry="90" fill="#fff" opacity="0.55" filter="url(#soft)"/>
+  <!-- strings -->
+  <path d="M300 420 C 320 520, 360 560, 400 640" stroke="#8b6b7b" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M420 360 C 420 470, 410 560, 400 640" stroke="#8b6b7b" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M540 430 C 510 520, 450 580, 400 640" stroke="#8b6b7b" stroke-width="3" fill="none" opacity="0.5"/>
+  <!-- balloons -->
+  <g>
+    <ellipse cx="300" cy="330" rx="88" ry="104" fill="#f9b0c3"/>
+    <ellipse cx="300" cy="330" rx="88" ry="104" fill="url(#shine)"/>
+    <path d="M290 432 L310 432 L300 446 Z" fill="#f38ba7"/>
+  </g>
+  <g>
+    <ellipse cx="420" cy="260" rx="92" ry="108" fill="#cbbaf6"/>
+    <ellipse cx="420" cy="260" rx="92" ry="108" fill="url(#shine)"/>
+    <path d="M410 366 L430 366 L420 380 Z" fill="#ad97ea"/>
+  </g>
+  <g>
+    <ellipse cx="540" cy="340" rx="84" ry="98" fill="#ffefb0"/>
+    <ellipse cx="540" cy="340" rx="84" ry="98" fill="url(#shine)"/>
+    <path d="M530 436 L550 436 L540 450 Z" fill="#fbe07c"/>
+  </g>
+  <!-- bow -->
+  <g transform="translate(372 620)">
+    <path d="M28 20 C14 0 0 2 0 14 C0 26 14 28 28 20 Z" fill="#e8698e"/>
+    <path d="M28 20 C42 0 56 2 56 14 C56 26 42 28 28 20 Z" fill="#e8698e"/>
+    <circle cx="28" cy="20" r="6" fill="#cc4f75"/>
+  </g>
+  <!-- sparkles -->
+  <g fill="#fff">
+    <path d="M150 180 C153 196 160 203 176 206 C160 209 153 216 150 232 C147 216 140 209 124 206 C140 203 147 196 150 180Z"/>
+    <path d="M660 470 C662 481 667 486 678 488 C667 490 662 495 660 506 C658 495 653 490 642 488 C653 486 658 481 660 470Z"/>
+    <path d="M200 520 C202 529 206 533 215 535 C206 537 202 541 200 550 C198 541 194 537 185 535 C194 533 198 529 200 520Z"/>
+    <path d="M610 90 C612 99 616 103 625 105 C616 107 612 111 610 120 C608 111 604 107 595 105 C604 103 608 99 610 90Z"/>
+  </g>
+</svg>
